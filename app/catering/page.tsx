@@ -22,7 +22,7 @@ export default function CateringPage() {
       guestCount: String(data.get("guestCount") ?? ""),
       eventType: String(data.get("eventType") ?? ""),
       details: String(data.get("details") ?? ""),
-      company: String(data.get("company") ?? ""), // honeypot
+      company: String(data.get("company") ?? ""),
     };
 
     setStatus("submitting");
@@ -46,7 +46,7 @@ export default function CateringPage() {
       setStatus("success");
       setMessage(
         json.message ??
-          "Thanks \u2014 we got your inquiry. We\u2019ll be in touch."
+          "Thanks — we got your inquiry. We’ll be in touch."
       );
       form.reset();
     } catch {
@@ -111,7 +111,7 @@ export default function CateringPage() {
         <section className="md:col-span-7">
           <form
             onSubmit={handleSubmit}
-            className="rounded-2xl border border-[#FAF6F0]/8 bg-[#120A07] p-6 md:p-10"
+            className="relative rounded-2xl border border-[#FAF6F0]/8 bg-[#120A07] p-6 md:p-10"
             noValidate
           >
             {/* Honeypot — hidden from real users. */}
@@ -131,7 +131,7 @@ export default function CateringPage() {
               <Field label="Phone" name="phone" type="tel" required autoComplete="tel" />
               <Field label="Event date" name="eventDate" type="date" required />
               <Field label="Guest count" name="guestCount" type="number" required min="1" />
-              <Field label="Event type" name="eventType" type="text" placeholder="Office, wedding, birthday\u2026" />
+              <Field label="Event type" name="eventType" type="text" placeholder="Office, wedding, birthday…" />
             </div>
 
             <div className="mt-5">
@@ -142,7 +142,7 @@ export default function CateringPage() {
                 <textarea
                   name="details"
                   rows={5}
-                  placeholder="Menu preferences, dietary needs, setup details\u2026"
+                  placeholder="Menu preferences, dietary needs, setup details…"
                   className="w-full resize-none rounded-lg border border-[#FAF6F0]/12 bg-[#1A0F0A] px-4 py-3 text-[15px] text-[#FAF6F0] placeholder:text-[#FAF6F0]/30 focus:border-[#E8A830] focus:outline-none"
                 />
               </label>

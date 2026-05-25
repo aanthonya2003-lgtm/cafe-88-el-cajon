@@ -38,7 +38,6 @@ export function StorySection() {
         }
       );
 
-      // Parallax on the image — moves slower than scroll.
       if (imgRef.current) {
         gsap.fromTo(
           imgRef.current,

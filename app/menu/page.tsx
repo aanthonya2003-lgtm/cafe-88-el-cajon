@@ -5,7 +5,7 @@ import { MENU, DELIVERY, BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Menu",
   description:
-    "Full Cafe 88 menu \u2014 a\u00e7a\u00ed bowls, crepes, milkshakes, Turkish coffee, smoothies, and desserts. Order pickup or delivery in El Cajon.",
+    "Full Cafe 88 menu — açaí bowls, crepes, milkshakes, Turkish coffee, smoothies, and desserts. Order pickup or delivery in El Cajon.",
 };
 
 const SECTIONS = [

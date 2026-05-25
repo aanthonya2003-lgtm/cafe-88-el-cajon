@@ -5,7 +5,7 @@ import { DELIVERY, BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Order",
   description:
-    "Order Cafe 88 in El Cajon \u2014 pickup or delivery through DoorDash, Uber Eats, or Grubhub. Or call (619) 312-1077.",
+    "Order Cafe 88 in El Cajon — pickup or delivery through DoorDash, Uber Eats, or Grubhub. Or call (619) 312-1077.",
 };
 
 const PLATFORMS = [
