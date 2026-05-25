@@ -43,7 +43,7 @@ export function Navigation() {
           <Link
             href="/"
             className="text-display text-2xl tracking-tight text-[#FAF6F0] md:text-3xl"
-            aria-label="Cafe 88 \u2014 home"
+            aria-label="Cafe 88 — home"
           >
             Cafe <span className="text-[#E8A830]">88</span>
           </Link>
