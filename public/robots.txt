@@ -1,0 +1,5 @@
+# Cafe 88 — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://cafe-88-el-cajon.vercel.app/sitemap.xml
