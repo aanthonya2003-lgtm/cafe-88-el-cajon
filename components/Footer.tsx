@@ -45,7 +45,7 @@ export function Footer() {
           <Link
             href="/"
             className="text-display text-3xl tracking-tight"
-            aria-label="Cafe 88 \u2014 home"
+            aria-label="Cafe 88 — home"
           >
             Cafe <span className="text-[#E8A830]">88</span>
           </Link>
@@ -145,11 +145,9 @@ export function Footer() {
 
       <div className="border-t border-[#FAF6F0]/8">
         <div className="container-wide flex flex-col items-start justify-between gap-3 py-6 text-[12px] text-[#FAF6F0]/45 md:flex-row md:items-center">
-          <p>
-            \u00a9 {new Date().getFullYear()} Cafe 88. All rights reserved.
-          </p>
+          <p>© {new Date().getFullYear()} Cafe 88. All rights reserved.</p>
           <p className="text-mono uppercase tracking-[0.18em]">
-            El Cajon \u00b7 California
+            El Cajon · California
           </p>
         </div>
       </div>
