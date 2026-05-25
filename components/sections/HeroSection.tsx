@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BUSINESS, DELIVERY } from "@/lib/constants";
+import { BUSINESS } from "@/lib/constants";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -155,10 +155,11 @@ export function HeroSection() {
         </p>
 
         <div className="hero-fade mt-10 flex flex-wrap items-center gap-3 md:gap-4">
+          {/* Primary CTA — routes to /order (multi-platform hub), not a
+              single delivery service. Sends users to choose their
+              preferred platform. */}
           <a
-            href={DELIVERY.doordash.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/order"
             className="group inline-flex items-center gap-2 rounded-full bg-[#E8A830] px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.16em] text-[#1A0F0A] transition-all hover:bg-[#F4B842]"
           >
             Order Now

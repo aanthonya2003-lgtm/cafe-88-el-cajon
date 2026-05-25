@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { DELIVERY } from "@/lib/constants";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -61,14 +60,15 @@ export function Navigation() {
             ))}
           </ul>
 
-          <a
-            href={DELIVERY.doordash.url}
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* Primary nav CTA — routes to /order (multi-platform hub), not
+              a single delivery service. Avoids abandoning Uber Eats and
+              Grubhub from the primary conversion path. */}
+          <Link
+            href="/order"
             className="hidden rounded-full bg-[#E8A830] px-6 py-2.5 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#1A0F0A] transition-transform hover:scale-[1.03] md:inline-block"
           >
             Order Now
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -125,15 +125,13 @@ export function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.36, duration: 0.5 }}
               >
-                <a
-                  href={DELIVERY.doordash.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/order"
                   onClick={() => setMobileOpen(false)}
                   className="mt-4 inline-block rounded-full bg-[#E8A830] px-8 py-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#1A0F0A]"
                 >
                   Order Now
-                </a>
+                </Link>
               </motion.li>
             </ul>
           </motion.div>

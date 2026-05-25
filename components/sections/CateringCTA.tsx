@@ -91,7 +91,7 @@ export function CateringCTA() {
             <p className="catering-fade mt-6 max-w-xl text-base leading-relaxed text-[#FAF6F0]/70">
               Açaí bowl bars, crepe stations, dessert platters, and
               beverage service for offices, weddings, birthdays, and
-              corporate events {BUSINESS.catering.serviceArea.toLowerCase()}.
+              corporate events throughout San Diego County.
             </p>
             <ul className="catering-fade mt-8 grid grid-cols-2 gap-3 text-[13px] text-[#FAF6F0]/75 md:max-w-md">
               <li className="flex items-center gap-2">

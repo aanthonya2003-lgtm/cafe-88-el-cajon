@@ -16,11 +16,15 @@ type Stat = {
   label: string;
 };
 
+// Stat #4: 3+ Delivery Platforms = DoorDash + Uber Eats + Grubhub.
+// Verified live in lib/constants DELIVERY block. Reflects the actual
+// number of channels the site connects to, not a vague "signature
+// creations" count that wasn't auditable.
 const STATS: Stat[] = [
   { value: BUSINESS.rating.stars, decimals: 1, label: "Average rating" },
   { value: BUSINESS.rating.count, suffix: "+", label: "Verified reviews" },
   { value: BUSINESS.rating.healthScore, suffix: "/100", label: "Health score" },
-  { value: 9, suffix: "+", label: "Signature creations" },
+  { value: 3, suffix: "+", label: "Delivery Platforms" },
 ];
 
 export function StatsSection() {
